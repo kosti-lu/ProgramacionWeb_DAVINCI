@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #FFC6E9;
     font-optical-sizing: auto;
@@ -27,6 +30,9 @@ nav{
     margin-top: 5px;
     margin-left: auto;
     width: fit-content;
+}
+a{
+    transition: background-color 0.2s ease;
 }
 h1{
     font-family: "Playfair Display", serif;
@@ -78,6 +84,10 @@ li{
 }
 .imagen_centro{
     text-align: center;
+    transition: transform 0.2s ease;
+}
+.imagen_centro:hover{
+    transform: scale(1.1);
 }
 .icons{
     position: relative;
@@ -94,6 +104,7 @@ li{
     width: fit-content;
 }
 .link_arriba{
+    transition: background-color 0.2s ease;
     font-family: "Lora", serif;
     font-weight: 400;
     font-size: large;
@@ -106,6 +117,10 @@ li{
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
+}
+.link_arriba:hover, a:hover{
+    background-color: #ff95ff;
+    border-radius: 5px;
 }
 footer{
     font-family: "Lora", serif;
